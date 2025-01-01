@@ -1,0 +1,368 @@
+section.settingContainer {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 999999;
+  background: #01040948;
+  backdrop-filter: blur(0.05rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0);
+  transition: 0.2s ease;
+}
+section.settingContainer .settingBox {
+  height: 50rem;
+  width: 65rem;
+  border-radius: 1rem;
+  display: flex;
+  padding: 1rem 0;
+  background-color: rgba(36, 40, 50, 1);
+  background-image: linear-gradient(
+    139deg,
+    rgba(36, 40, 50, 1) 0%,
+    rgba(36, 40, 50, 1) 0%
+  );
+  position: relative;
+}
+section.settingContainer .settingBox .first-container {
+  width: 35rem;
+  height: 100%;
+  padding: 1rem 1rem 0 1rem;
+  border-right: 0.1rem solid #445;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+section.settingContainer .settingBox .first-container ul {
+  list-style: none;
+  color: var(--text-color);
+}
+
+section.settingContainer .settingBox .first-container ul li.settingMenu {
+  margin: 0.5rem 1rem;
+  font-size: 1.4rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+section.settingContainer .settingBox .first-container ul li.settingMenu:hover {
+  background: rgb(58 58 77) !important;
+}
+section.settingContainer .settingBox .first-container .premium {
+  justify-content: center;
+  margin-top: 2rem;
+  padding: 0.15rem 0.15rem 0.2rem 0.15rem;
+  background-image: linear-gradient(135deg, #69ff97 10%, #00e4ff 100%);
+  animation: premiumLinear 10s ease-in-out infinite;
+  border-radius: 0.8rem;
+}
+
+@keyframes premiumLinear {
+  0% {
+    background-image: linear-gradient(135deg, #69ff97 10%, #00e4ff 100%);
+  }
+  20% {
+    background-image: linear-gradient(135deg, #69ff97 10%, #00e4ff 100%);
+  }
+  25% {
+    background-image: linear-gradient(135deg, #70f570 10%, #49c628 100%);
+  }
+  45% {
+    background-image: linear-gradient(135deg, #70f570 10%, #49c628 100%);
+  }
+  50% {
+    background-image: linear-gradient(135deg, #ff96f9 10%, #c32bac 100%);
+  }
+  70% {
+    background-image: linear-gradient(135deg, #ff96f9 10%, #c32bac 100%);
+  }
+  75% {
+    background-image: linear-gradient(135deg, #fd6e6a 10%, #ffc600 100%);
+  }
+  95% {
+    background-image: linear-gradient(135deg, #fd6e6a 10%, #ffc600 100%);
+  }
+  100% {
+    background-image: linear-gradient(135deg, #69ff97 10%, #00e4ff 100%);
+  }
+}
+
+section.settingContainer .settingBox .first-container .premium button {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  border: none;
+  font-weight: 400;
+  background: #191c20;
+  border-radius: 0.7rem;
+  padding: 1rem;
+  color: var(--text-color);
+  transition: 0.3s ease;
+  font-size: 1.3rem;
+}
+
+section.settingContainer .settingBox .first-container .premium button:hover {
+  background: rgb(39, 39, 49);
+  cursor: pointer;
+}
+section.settingContainer .settingBox .first-container .premium button span {
+  display: flex;
+  margin: 0 1rem 0 0;
+}
+section.settingContainer .settingBox .first-container ul li.settingMenu span {
+  margin-right: 1rem;
+  display: flex;
+}
+section.settingContainer .settingBox .first-container ul li h2 {
+  padding-left: 0.7rem;
+  margin-bottom: 3rem;
+  border-left: 0.5rem solid #445;
+  font-size: 1.6rem;
+}
+section.settingContainer .settingBox .second-container {
+  width: 100%;
+  height: 100%;
+}
+section.settingContainer .settingBox .second-container .topHeadTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 1rem;
+  padding: 0.5rem 0.5rem 0.7rem 0.5rem;
+  border-bottom: 0.1rem solid #445;
+  color: var(--text-color);
+  font-size: 1.6rem;
+}
+section.settingContainer .settingBox .second-container .topHeadTitle h2 {
+  font-weight: 400;
+}
+section.settingContainer .settingBox .second-container .topHeadTitle span {
+  font-size: 1.7rem;
+  cursor: pointer;
+  display: flex;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  transition: 0.2s ease-in-out;
+}
+section.settingContainer
+  .settingBox
+  .second-container
+  .topHeadTitle
+  span:hover {
+  background-color: var(--secondary-element-color);
+  color: var(--primary-element-color);
+}
+section.settingContainer .settingBox .second-container .topBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  background: var(--primary-background);
+  margin: 1rem;
+  height: 8rem;
+  width: auto;
+  border-radius: 1rem;
+  background-image: url("/banner/banner.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+section.settingContainer .settingBox .second-container .topBox .image {
+  position: relative;
+  /* top: 6rem; */
+  height: 7.5rem;
+  width: 7.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+section.settingContainer .settingBox .second-container .topBox .image label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section.settingContainer
+  .settingBox
+  .second-container
+  .topBox
+  .image
+  label
+  span {
+  position: absolute;
+  font-size: 2rem;
+  background: #101010ba;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  height: 6rem;
+  width: 6rem;
+  pointer-events: none;
+  color: #ffffff;
+  transition: 0.3s ease;
+  opacity: 0;
+}
+section.settingContainer
+  .settingBox
+  .second-container
+  .topBox
+  .image:hover
+  label
+  span {
+  opacity: 1;
+}
+section.settingContainer .settingBox .second-container .topBox img {
+  height: 7rem;
+  width: 7rem;
+  border: 0.5rem solid #191c20;
+  border-radius: 50%;
+  background: var(--black-color);
+  cursor: pointer;
+}
+
+section.settingContainer .settingBox .second-container .topBox h2 {
+  font-size: 1.3rem;
+  position: relative;
+  /* top: 6rem; */
+  left: 0.5rem;
+  color: var(--text-color);
+}
+section.settingContainer .settingBox .second-container .topBox .profileDetails {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 5.3rem;
+}
+section.settingContainer
+  .settingBox
+  .second-container
+  .topBox
+  .profileOverviewBoxBtns {
+  display: flex;
+  position: relative;
+  top: 6rem;
+  left: 1.9rem;
+}
+
+section.settingContainer
+  .settingBox
+  .second-container
+  .topBox
+  .profileOverviewBoxBtns
+  button {
+  background: transparent;
+  border: 0.1rem solid var(--primary-element-color);
+  color: var(--primary-element-color);
+  padding: 0.2rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0.3rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 1.1rem;
+  height: 2.5rem;
+  transition: 0.3s ease;
+}
+section.settingContainer
+  .settingBox
+  .second-container
+  .topBox
+  .profileOverviewBoxBtns
+  button:hover {
+  background: var(--primary-element-color);
+  color: var(--black-color);
+}
+section.settingContainer .settingBox .second-container .userDetailsDiv {
+  margin: 1rem;
+  position: relative;
+  margin-top: 6rem;
+  padding: 1rem;
+}
+section.settingContainer
+  .settingBox
+  .second-container
+  .userDetailsDiv
+  .userDiv {
+  margin-bottom: 2rem;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+section.settingContainer
+  .settingBox
+  .second-container
+  .userDetailsDiv
+  .userDiv
+  .label {
+  font-weight: 400;
+  font-size: 1.3rem;
+  color: #ffffff54;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-bottom: 0.4rem;
+}
+section.settingContainer
+  .settingBox
+  .second-container
+  .userDetailsDiv
+  .userDiv
+  .label
+  div {
+  display: flex;
+  background: #33333e;
+  height: 1.3rem;
+  width: 1.3rem;
+  border-radius: 50%;
+  margin-left: 0.6rem;
+  cursor: pointer;
+  position: relative;
+}
+section.settingContainer
+  .settingBox
+  .second-container
+  .userDetailsDiv
+  .userDiv
+  p {
+  color: var(--text-color);
+  font-size: 1.3rem;
+  margin-top: 0.1rem;
+}
+section.settingContainer
+  .settingBox
+  .second-container
+  .userDetailsDiv
+  .userDiv
+  span {
+  font-size: 1.6rem;
+  color: var(--text-color);
+  cursor: pointer;
+  display: flex;
+  transition: 0.3s ease;
+}
+section.settingContainer
+  .settingBox
+  .second-container
+  .userDetailsDiv
+  .userDiv
+  span:hover {
+  color: var(--primary-element-color);
+}

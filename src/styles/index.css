@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+  font-family: head-font-bold;
+  src: url(../assets/fonts/Header/Signika-Bold.ttf);
+}
+@font-face {
+  font-family: head-font-extraBold;
+  src: url(../assets/fonts/header-font/BespokeSerif-Extrabold.otf);
+}
+@font-face {
+  font-family: paragraph-font;
+  src: url(../assets/fonts/Paragraph/NeueMontreal-Regular.otf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: paragraph-font;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background: var(--primary-background);
+}
+:root {
+  --primary-background: #0d1117;
+  --primary-element-color: #9daaf2;
+  --secondary-element-color: #9daaf21b;
+  --text-color: #c7c7d7;
+  --black-color: #101010;
+  --button-linear-color: linear-gradient(
+    135deg,
+    #abdcff 10%,
+    var(--primary-element-color) 100%
+  );
+}

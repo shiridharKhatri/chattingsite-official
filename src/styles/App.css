@@ -1,0 +1,114 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  color: #eeebffe6;
+}
+nav .nav-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav .nav-details form {
+  border: 0.1rem solid #eeebffe6;
+  border-radius: 3rem;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4.2rem;
+  width: 30rem;
+}
+nav .nav-details form input {
+  padding: 1rem 1.5rem;
+  border: none;
+  background: transparent;
+  outline: none;
+  color: #eeebffe6;
+  font-size: 1.3rem;
+  width: 100%;
+}
+nav .nav-details form button {
+  border: none;
+  padding: 1rem;
+  border-radius: 50%;
+  background-color: transparent;
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  height: 4.5rem;
+  width: 4.5rem;
+  background: transparent;
+  color: var(--text-color);
+}
+nav .nav-details ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 0 3rem;
+}
+nav .nav-details ul a {
+  text-decoration: none;
+}
+nav .nav-details ul li {
+  font-size: 1.7rem;
+  margin: 0 1.5rem;
+  cursor: pointer;
+}
+nav .nav-details ul li#loginBtn button {
+  padding: 1rem 2rem;
+  border-radius: 3rem;
+  cursor: pointer;
+  height: 4rem;
+  background-image: var(--button-linear-color);
+  border: none;
+  color: var(--black-color);
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+nav .nav-details ul li#loginBtn button:hover {
+  box-shadow: 0px 0px 142px 3px rgba(42, 250, 222, 0.44);
+}
+.tooltip {
+  position: absolute;
+  top: -6rem;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0.3em 0.6em;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+  background: rgb(36, 36, 45);
+  z-index: 1;
+  border-radius: 8px;
+  scale: 0;
+  transform-origin: 0 0;
+  text-transform: capitalize;
+  font-weight: 400;
+  font-size: 1.4rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  color: var(--text-color);
+  text-align: center;
+}
+
+.tooltip::before {
+  position: absolute;
+  content: "";
+  height: 0.6em;
+  width: 0.6em;
+  bottom: -0.2em;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  background: rgb(36, 36, 45);
+  z-index: -1;
+}
